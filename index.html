@@ -27,6 +27,7 @@
         }
         .container {
             display: flex;
+            flex-direction: column;
             padding: 20px;
             margin: 20px auto;
             max-width: 800px;
@@ -39,9 +40,11 @@
             height: 150px;
             object-fit: cover;
             margin-right: 20px;
+            align-self: center;
         }
         .profile-info {
             flex: 1;
+            text-align: center;
         }
         .profile-info h1 {
             margin-top: 0;
@@ -51,6 +54,7 @@
         }
         nav {
             margin-top: 20px;
+            text-align: center;
         }
         nav a {
             margin: 0 10px;
@@ -60,6 +64,17 @@
         }
         nav a:hover {
             color: #007BFF;
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+            }
+            .profile-info {
+                text-align: left;
+            }
+            nav {
+                text-align: left;
+            }
         }
     </style>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -78,14 +93,16 @@
     <div class="profile-info">
         <h1>Hello, there!</h1>
         <p align="justify">
-            I am Ananga Tripathee, an International student from Nepal and an Incoming Freshman at Truman State University starting this Fall, majoring in Computer Science. I will be upgrading this website soon and adding new things :)
+            I am Ananga Tripathee, an International student from Nepal and an Incoming Freshman at Truman State University starting this Fall, majoring in Computer Science. I will be upgrading this website soon and adding new things. :)
         </p>
         <nav>
-            <a href="https://www.youtube.com/channel/UCnxaWHdBMO-VCH-H93H2Zwg" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+             
             <a href="https://www.facebook.com/ananga.tripathee" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/anangatripathee/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
             <a href="https://twitter.com/AnangaTripathee" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/ananga-tripathee-0ba37529a/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCnxaWHdBMO-VCH-H93H2Zwg" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ananga-tripathee/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="anangatripathee23@gmail.com" aria-label="Gmail"><i class="fa fa-envelope"></i></a>
         </nav>
     </div>
 </div>
