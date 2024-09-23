@@ -65,6 +65,26 @@
         nav a:hover {
             color: #007BFF;
         }
+        /* Resume button styling */
+        .resume-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .resume-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .resume-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
         @media (min-width: 600px) {
             .container {
                 flex-direction: row;
@@ -74,6 +94,12 @@
             }
             nav {
                 text-align: left;
+            }
+        }
+        @media (max-width: 768px) {
+            .resume-btn {
+                font-size: 16px;
+                padding: 12px 24px;
             }
         }
     </style>
@@ -93,25 +119,23 @@
     <div class="profile-info">
         <h1>Hello, there!</h1>
         <p align="justify">
-            I am Ananga Tripathee, an International student from Nepal and an Freshman at Truman State University, majoring in Computer Science. I will be upgrading this website soon and adding new things. :)
+            I am Ananga Tripathee, an International student from Nepal and a Freshman at Truman State University, majoring in Computer Science. I will be upgrading this website soon and adding new things. :)
         </p>
         <nav>
-             
-             <a href="https://www.facebook.com/ananga.tripathee" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/ananga.tripathee" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/anangatripathee/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
             <a href="https://twitter.com/AnangaTripathee" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
             <a href="https://www.youtube.com/channel/UCnxaWHdBMO-VCH-H93H2Zwg" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
             <a href="https://www.linkedin.com/in/ananga-tripathee-0ba37529a/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
             <a href="mailto:anangatripathee23@gmail.com" aria-label="Gmail"><i class="fa fa-envelope"></i></a>
         </nav>
+        <div class="resume-container">
+            <a href="D:\Website\resume.pdf" download="My_Resume.pdf">
+                <button class="resume-btn">View My Resume</button>
+            </a>
+        </div>
     </div>
 </div>
-
-   <h2>View My Resume</h2>
-    <!-- This is the view section -->
-    <a href="resume.pdf" target="_blank">
-        <button>View My Resume</button>
-    </a>
 
 </body>
 </html>
